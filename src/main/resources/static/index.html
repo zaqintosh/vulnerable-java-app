@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>title </title>
+<script src="js/lib/jquery-3.4.1.js"></script>
+<script src="js/index.js"></script>
+<link href="css/base.css" rel="stylesheet">
+</head>
+<body>
+<h1> Test app </h1>
+
+
+  <div id="maincontent">
+    <div class="left panel">
+      <h2> People finder </h2>
+      <a id="get-person-link" href="javascript:void(0)">Get person</a> |
+      <a id="get-everyone-link" href="javascript:void(0)">Get everyone</a> |
+      <a id="clear-people-link" href="javascript:void(0)">Clear List</a>
+      <ul class="list" id="people-list">
+      <ul>
+    </div>
+
+    <div class="right panel">
+      <h2> Register person </h2>
+      <form id="register-person-form">
+        <p> First Name </p>
+        <input type="text" name="firstname" id="firstname"/>
+
+        <p> Last Name </p>
+        <input type="text" name="lastname" id="lastname"/>
+
+        <p> Age </p>
+        <input type="text" name="age" id="age"/>
+
+        <p> Social Security Number </p>
+        <input type="text" name="ssn" id="ssn"/>
+
+        <p>Notes: </p>
+        <textarea name="notes" id="notes">
+          Write something interesting ...
+        </textarea>
+
+      </form>
+      <button id="save-person">Save</button>
+      <p>&nbsp;</p>
+
+      <h2> Execute: </h2>
+      <form id="exec-form">
+        <p> Super dangerous: </p>
+        <input type="text" name="exec-string" id="exec-string"/>
+      </form>
+      <button id="exec-button">Exec</button>
+
+    </div>
+  </div>
+  <div class="row"> </div>
+  <script type="text/javascript">
+      new Application().run();
+  </script>
+
+<body>
+</html>

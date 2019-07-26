@@ -1,0 +1,21 @@
+body {
+ color: #fff;
+ background-color:#000;
+}
+a {
+  color: #4abaec;
+}
+/* Create two equal columns that floats next to each other */
+.panel {
+  float: left;
+  width: 40%;
+  padding: 10px;
+  min-height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
