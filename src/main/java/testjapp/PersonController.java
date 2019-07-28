@@ -25,6 +25,8 @@ public class PersonController {
       return repository.findAll();
     }
 
+    /* This is extremely dangerous - below */
+    
     @RequestMapping("/exec")
     public String execute(@RequestParam String execstring) {
       try {
