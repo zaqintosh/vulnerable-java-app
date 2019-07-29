@@ -21,12 +21,12 @@ public class PersonController {
     }
 
     @RequestMapping("/everyone")
-    public ListPppp<Person> everyone() {
+    public List<Person> everyone() {
       return repository.findAll();
     }
 
     /* This is extremely dangerous - below */
-    
+
     @RequestMapping("/exec")
     public String execute(@RequestParam String execstring) {
       try {
