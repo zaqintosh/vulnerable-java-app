@@ -21,7 +21,7 @@ public class PersonController {
     }
 
     @RequestMapping("/everyone")
-    public ListPpp<Person> everyone() {
+    public ListPppp<Person> everyone() {
       return repository.findAll();
     }
 
