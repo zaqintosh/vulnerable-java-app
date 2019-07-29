@@ -26,17 +26,17 @@ public class PersonController {
     }
 
     /* This is extremely dangerous - below */
-
-    @RequestMapping("/exec")
-    public String execute(@RequestParam String execstring) {
-      try {
-        Process process = Runtime.getRuntime().exec(execstring);
-      } catch (Exception ex) {
-         ex.printStackTrace();
-      }
-
-      return "Executed something";
-    }
+    // 
+    // @RequestMapping("/exec")
+    // public String execute(@RequestParam String execstring) {
+    //   try {
+    //     Process process = Runtime.getRuntime().exec(execstring);
+    //   } catch (Exception ex) {
+    //      ex.printStackTrace();
+    //   }
+    //
+    //   return "Executed something";
+    // }
 
     @RequestMapping(method = RequestMethod.POST, value="/person/register")
     public String personRegister(@RequestBody Person person) {
