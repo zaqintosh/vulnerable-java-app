@@ -15,15 +15,15 @@ public class PersonController {
     private final AtomicLong counter = new AtomicLong();
 
     @RequestMapping("/person")
-    public Person person() {
-      Person p = repository.findAll().get(1);
-      return p;
+    public String person() {
+      // Person p = repository.findAll().get(1);
+      return "hello there";
     }
 
-    @RequestMapping("/everyone")
-    public List<Person> everyone() {
-      return repository.findAll();
-    }
+    // @RequestMapping("/everyone")
+    // public List<String> everyone() {
+    //   return ["hi","hi2"];
+    // }
 
     /* This is extremely dangerous  below */
     //
