@@ -68,7 +68,7 @@ class IndexPage {
       $(this.peopleListID).children().remove();
       this.peoplePopulated = false;
     });
-
+    
     $(this.savePersonButton).click(() => {
         var newPerson = {
           firstName: $(this.registerPersonForm).find("#firstName").val(),
