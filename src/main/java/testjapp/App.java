@@ -19,9 +19,9 @@ public class App {
         p.setLastName("Villa");
         p.setAge(56);
 
-        System.out.println(new App().getGreeting());
-        System.out.println(p.getFirstName());
-        System.out.println(p.getLastName());
+        // System.out.println(new App().getGreeting());
+        // System.out.println(p.getFirstName());
+        // System.out.println(p.getLastName());
 
         // all you need is this below:
         SpringApplication.run(App.class, args);
